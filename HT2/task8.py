@@ -1,19 +1,12 @@
-# Вывести входит ли строка1 в строку2 (пример: employ и employment )
+# Дано число n. Вывести на экран числа 1, 4, 9, 16, 25, ... которые меньше n.
+# Sample Input :
+# 15
+# Sample Output :
+# 1 4 9
 
-strincheck1 = "employ"
-strincheck2 = "employment"
+n = int(input("Введите число n: "))
 
-if strincheck2 in strincheck2:
-    print(f'"{strincheck1}" is using in "{strincheck2}" ')
-else:
-    print(f'"{strincheck1}" don\'t use "{strincheck2}" ')
-    
-#v2
-
-strincheck3 = "gopi"
-strincheck4 = "bobi"
-
-if strincheck3 in strincheck4:
-    print(f'"{strincheck3}" is using in "{strincheck4}" ')
-else:
-    print(f'"{strincheck3}" don\'t use "{strincheck4}" ')
+i = 1
+while i**2 < n:
+    print(i**2, end=" ")
+    i += 1

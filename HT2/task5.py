@@ -1,9 +1,8 @@
-# В строке “Ivanou Ivan” поменяйте местами слова => "Ivan Ivanou"
+# Вывести на экран число "10" 20 раз столбиком.
 
-imie = "Ivanou Ivan"
-s = imie.split()
-s.reverse()
+number = 10
+counter = 0
 
-result = " ".join(s)
-
-print(result)
+while counter < 10:
+    print(number)
+    counter = counter + 1
