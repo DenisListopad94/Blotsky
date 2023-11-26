@@ -1,13 +1,11 @@
+def after_recursive(s, index=0):
+    if index == len(s):
+        return 0
+    else:
+        digit = int(s[index])
+        return digit + after_recursive(s, index + 1)
+
+
 num = "14623"
-lst = []
-
-for i in num:
-    integer = int(i)
-    lst.append(integer)
-    summ = sum(lst)
-
-print(summ)
-
-# OR 
-# a = int(num[0]) + int(num[-1]) + int(num[-2]) + int(num[-3]) + int(num[-4])
-# # print(a)
+result = after_recursive(num)
+print(result)

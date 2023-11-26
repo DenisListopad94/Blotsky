@@ -1,7 +1,11 @@
-def digits(n):
-    for n in reversed(str(input_date)):
-        print(n, end=" ")
+def after_recursive(n):
+    if n == 0:
+        return
+    else:
+        digit = n % 10
+        print(digit, end=" ")
+        after_recursive(n // 10)
 
 
 input_date = 14623
-digits_show = digits(input_date)
+after_recursive(input_date)

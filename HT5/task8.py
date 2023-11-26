@@ -1,8 +1,6 @@
 def closest_mod_5(x):
-    y = x
-    while y % 5 != 0:
-        y += 1
-    return y
+    return x + (5 - x % 5) % 5
+
 
 input_number = int(input("Введите целое число x: "))
 result = closest_mod_5(input_number)
