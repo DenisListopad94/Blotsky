@@ -14,3 +14,6 @@ try:
 
 except Exception as e:
     print(f"Can't recorded, error: {e}")
+
+finally:
+    gg.close()

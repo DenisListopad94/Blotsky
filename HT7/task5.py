@@ -17,6 +17,8 @@ def read_file():
         for row in data:
             row_with_prefix = ["person; " + str(value) if i == 0 else value for i, value in enumerate(row.values())]
             writer.writerow(row_with_prefix)
+    print(data)
+    file_json.close()
 
 
 read_file()

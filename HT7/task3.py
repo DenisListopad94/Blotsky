@@ -46,6 +46,9 @@ def filter_products(items_store, filt_price, days_ago):
     return filtered_products
 
 
+print(js)
+js.close()
+
 filt_price = 100000
 days_ago = 30
 filtered_products = filter_products(items_store, filt_price, days_ago)
